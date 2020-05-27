@@ -8,7 +8,7 @@
       "name": "(lldb) 启动",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/redis-debug",
+      "program": "${workspaceFolder}/build/redis-server",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
