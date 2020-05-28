@@ -22,10 +22,10 @@ int main(void)
 // zskiplist
 #if 1
     zskiplist *z1 = zslCreate();
-    sds s1 = sdsnewlen("hello1", 5);
-    sds s2 = sdsnewlen("hello2", 5);
-    sds s3 = sdsnewlen("hello3", 5);
-    sds s4 = sdsnewlen("hello4", 5);
+    sds s1 = sdsnewlen("hello1", 6);
+    sds s2 = sdsnewlen("hello2", 6);
+    sds s3 = sdsnewlen("hello3", 6);
+    sds s4 = sdsnewlen("hello4", 6);
     zslInsert(z1, 3.0, s1);
     zslInsert(z1, 2.0, s2);
     zslInsert(z1, 1.0, s3);
