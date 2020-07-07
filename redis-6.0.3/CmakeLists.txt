@@ -85,11 +85,11 @@ set(SRC_SERVER_TMP
         src/zmalloc.c
         src/timeout.c
         src/crcspeed.c
-        src/server.c
+        # src/server.c
         )
-# set(SRC_SERVER src/server.c ${SRC_SERVER_TMP})
+set(SRC_SERVER src/server.c ${SRC_SERVER_TMP})
 
-set(SRC_SERVER debug/main.c ${SRC_SERVER_TMP})
+# set(SRC_SERVER debug/main.c ${SRC_SERVER_TMP})
 
 include_directories(src)
 

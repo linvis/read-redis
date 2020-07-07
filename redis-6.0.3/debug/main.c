@@ -80,6 +80,7 @@ int main(void)
     z1 = ziplistInsert(z1, vptr, (unsigned char *)s3, sdslen(s3));
 #endif
 
+#if 0
     // dict
     dict *dict = dictCreate(&debugDictType, NULL);
     for (int j = 0; j < 2; j++) {
@@ -96,6 +97,21 @@ int main(void)
 
         sdsfree(key);
     }
+#endif
+
+#if 0
+    intset *is1 = intsetNew();
+    int64_t value = 0;
+
+    is1 = intsetAdd(is1, 12345, NULL);
+    intsetGet(is1, 0, &value);
+    printf("intset value:%lld\n", value);
+#endif
+
+    // quicklist
+    quicklist *q1 = quicklistCreate();
+
+    quicklistPushHead(q1, "hello", strlen("hello"));
 
     return 0;
 }
